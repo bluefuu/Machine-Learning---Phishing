@@ -1,1 +1,1 @@
-# ML-EmailPhishing
+# Machine Learning: Phishing website detection
