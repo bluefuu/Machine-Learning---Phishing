@@ -8,9 +8,9 @@ The dataset is taken from Universiti Malaysia Sarawak. It consists of 30,000 web
 2. IP address
 3. @ symbol
 4. Long URL
-5. Https
-6. Multi Sub-Domains
-7. Domain Age
+5. Multi Sub-Domains
+6. Domain Age
+7. Https
 8. Cookie
 9. Redirection
 10. DNS record
