@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block title %}Phish or not{% endblock %}
+
+{% block content %}
+    <form action="{{ url_for('result') }}" method="post">
+        <input type="text" placeholder="https://www.example.com" name="search" class="form-control">
+        <input type="submit" value="Catch the phish!" class="btn">
+    </form>
+{% endblock %}

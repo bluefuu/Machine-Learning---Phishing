@@ -1,0 +1,21 @@
+<!doctype html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+
+        <title>{% block title %} {% endblock %}</title>
+        <link rel="shortcut icon" type="image/jpg" href="{{ url_for('static',    filename='img/favicon.ico') }}"/>
+        <meta name="description" content="Phishing Website Detection using Machine Learning">
+        <meta name="author" content="Kim Nguyen">
+        <link rel="stylesheet" href="{{ url_for('static',    filename='css/bootstrap.min.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static',    filename='css/style.css') }}">
+    </head>
+
+    <body>
+        <div class="container">
+            <img src="{{ url_for('static',    filename='img/logo.png') }}" alt="phishing illustration" class="img-fluid logo">
+            {% block content %} {% endblock %}
+        </div>
+    </body>
+</html>

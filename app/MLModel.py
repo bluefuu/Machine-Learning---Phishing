@@ -32,8 +32,16 @@ class MLModel:
           #print(dt)
 
      def test(self, farray):
-          classification = self.dt.classify(self.root_node, farray)
-          return classification
+          result = self.dt.classify(self.root_node, farray)
+          not_phishing = float(result.get('is_phishing=0'))
+          is_phishing = float(result.get('is_phishing=1'))
+
+          if not_phishing > 0.7:
+               return "Safe"
+          elif is_phishing > 0.7:
+               return "Threat"
+          else: 
+               return "Unsure" 
 
 
 

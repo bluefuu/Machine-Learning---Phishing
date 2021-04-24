@@ -1,0 +1,28 @@
+.container{
+    text-align: center;
+}
+
+.logo{
+    margin-top: 250px;
+    margin-bottom: 60px;
+    width: 100px;
+}
+
+.form-control{
+    width: 60%;
+    margin:auto;
+    margin-bottom: 40px;
+}
+
+.btn{
+    background-color: #f8f9fa; 
+    transition: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}

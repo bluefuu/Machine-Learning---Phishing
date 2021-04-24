@@ -1,21 +1,53 @@
-import Features
+from flask import Flask, render_template, request
+
 import MLModel
+import Features
+import re
 
-url = "https://www.optus.com.au/"
-url14 = "https://www.linkfire.com/"
-url1 = "https://globalinfohost.com/landingpage/dd263864-38a2-466a-be2f-4e5ec6c5e042/mthzm4r_hzib_ekunll2tnc0tdjldeg0lh9s9kemwws"
-url2 = "http://206.189.85.218/download-film-sea-fever-2020-sub-indo/"
-url3 = "http://stolizaparketa.ru/wp-content/themes/twentyfifteen/css/read/chinavali/index.php?email=jsmith@imaphost.com"
+regex = re.compile(
+        r'^(?:http|ftp)s?://' # http:// or https://
+        r'(?:(?:[A-Z0-9](?:[A-Z0-9-]{0,61}[A-Z0-9])?\.)+(?:[A-Z]{2,6}\.?|[A-Z0-9-]{2,}\.?)|' #domain...
+        r'localhost|' #localhost...
+        r'\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})' # ...or ip
+        r'(?::\d+)?' # optional port
+        r'(?:/?|[/?]\S+)$', re.IGNORECASE)
 
-fl = Features.Feature(url14)
-farray = fl.getList()
+app = Flask(__name__)
 
 mlmodel = MLModel.MLModel()
 
-result = mlmodel.test(farray)
+@app.route('/')
+def home():
+    return render_template("index.html")
 
-not_phishing = result.get('is_phishing=0')
-is_phishing = result.get('is_phishing=1')
+@app.route('/result', methods=['POST'])
+def result():
+    if request.method == 'POST':
+        url = request.form['search']
+        isURL = (re.match(regex, url) is not None)
+        if isURL:
+            fl = Features.Feature(url)
+            farray = fl.getList()
+            r = mlmodel.test(farray)
+            badge = ""
+            title = ""
+            if r is 'Safe':
+                title = "Yay! Not Phish"
+                badge = "bg-success"
+            elif r is 'Threat':
+                title = "Oh no Phish"
+                badge = "bg-danger"
+            else:
+                title = "hmm not sure"
+                badge = "bg-warning"
 
-print("Phishing %: " + str(is_phishing))
-print("Not Phishing %: " + str(not_phishing))
+            return render_template("result.html", result=r, url=url, badge=badge, title=title)
+
+        else:
+            return render_template("invalid.html")
+    else:
+        return "nothing"
+
+
+if __name__ == "__main__":
+    app.run(debug=True)
