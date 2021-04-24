@@ -19,8 +19,8 @@ Legitimate websites: 500 random websites were taken from https://www.domcop.com/
 11. SSL certificates
 
 ## Model & Training
-Dataset = classification problem.
-URL input is classified as phishing or legitimate.
+Dataset = classification problem. <br />
+URL input is classified as phishing or legitimate. <br />
 Machine learning model used Decision Tree.
 
 
