@@ -2,7 +2,7 @@
 ## Objective
 
 ## Dataset
-Phishing websites: 500 random websites were taken from http://phishtank.org/
+Phishing websites: 500 random websites were taken from http://phishtank.org/ <br />
 Legitimate websites: 500 random websites were taken from https://www.domcop.com/
 
 ## Features
