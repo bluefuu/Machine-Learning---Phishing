@@ -1,19 +1,26 @@
-# Machine Learning: Phishing website detection
+# Phishing Website Detection using Machine Learning
 ## Objective
 
 ## Dataset
-The dataset is taken from Universiti Malaysia Sarawak. It consists of 30,000 websites, 15,000 legitimate websites and 15,000 phishing websites.
+Phishing websites: 500 random websites were taken from http://phishtank.org/
+Legitimate websites: 500 random websites were taken from https://www.domcop.com/
+
 ## Features
 1. Blacklist
 2. IP address
 3. @ symbol
-4. Long URL
-5. Multi Sub-Domains
+4. Multi domain
+5. Long url
 6. Domain Age
-7. Https
-8. Cookie
-9. Redirection
+7. Cookie
+8. Webpage links
+9. Favicon
 10. DNS record
-11. Web Traffic
-12. Google Index
+11. SSL certificates
+
 ## Model & Training
+Dataset = classification problem.
+URL input is classified as phishing or legitimate.
+Machine learning model used Decision Tree.
+
+
