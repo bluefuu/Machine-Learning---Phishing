@@ -13,11 +13,12 @@ import badcookie as bc
 import foreignlinks as fl
 import foreignfavi as ff
 import nodns
-import badssl as bs
+import badssl as bs  
 
 filename = ROOT_DIR + "\\app\data\\blacklist.csv"
 
 blacklist = []
+
 
 with open(filename,'r') as data:
     for line in csv.reader(data):
