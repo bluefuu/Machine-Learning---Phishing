@@ -2,7 +2,7 @@ import pandas
 
 import sys
 import os
-ROOT_DIR = os.path.dirname(os.path.abspath("")) + '\\functions'
+ROOT_DIR = os.path.dirname(os.path.abspath("")) + '\\app\\functions'
 sys.path.append(ROOT_DIR)
 
 

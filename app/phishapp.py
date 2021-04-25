@@ -44,7 +44,7 @@ def result():
             return render_template("result.html", result=r, url=url, badge=badge, title=title)
 
         else:
-            return render_template("invalid.html")
+            return render_template("invalid.html", title="uh oh! invalid url")
     else:
         return "nothing"
 

@@ -5,7 +5,7 @@ import re
 
 
 ROOT_DIR = os.path.dirname(os.path.abspath(""))
-path = ROOT_DIR + '\\functions'
+path = ROOT_DIR + '\\app\\functions'
 sys.path.append(path)
 
 import ygdom as yd
