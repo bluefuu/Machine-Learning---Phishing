@@ -24,7 +24,7 @@ URL input is classified as phishing or legitimate. <br />
 Machine learning model used Decision Tree.
 
 ## Demo
-Click here for demo of the app https://phishornah.herokuapp.com/
+Click here for demo of the app https://phishornah.herokuapp.com/ <br />
 Accuracy for the detection is not yet over 90%, further adjustment required to refine each feature.
 
 
