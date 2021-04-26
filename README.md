@@ -3,8 +3,8 @@
 Phishing websites are fake websites created by malicious people with the intention of stealing user's personal data. Detecting and identifying a phishing website is a complex problem as it takes many factors into account. This project is an attempt to create a web app that identifies phishing websites using Machine learning.
 
 ## Dataset
-**Phishing websites:** 500 random websites were taken from http://phishtank.org/ <br />
-**Legitimate websites:** 500 random websites were taken from https://www.domcop.com/
+**Phishing websites:** 1500 random websites were taken from http://phishtank.org/ <br />
+**Legitimate websites:** 1500 random websites were taken from https://www.domcop.com/
 
 ## Features
 This is a set of features that is used to detect phishing website. Each website in the dataset has its data being extracted base on the features. The extracted data are in 1 and 0, 1 for being legitimate and 0 for being suspicious. Data are saved as a .csv file used to train the machine learning.<br /><br />
