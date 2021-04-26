@@ -41,7 +41,7 @@ Machine learning model used Decision Tree.
 Click here for demo of the app https://phishornah.herokuapp.com/ <br />
 ### Current limitations
 This is only a demonstration and is not fully functioning app. 
-The app currently doesn't support URL with paths and will not returned an accurate result.
+The app currently doesn't support URL with paths and return an inaccurate result for legitmate websites with long paths.
 
 
 
