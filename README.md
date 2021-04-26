@@ -1,6 +1,6 @@
 # Phishing Website Detection using Machine Learning
 ## Objective
-Phishing websites are fake websites created by malicious people wiht the intention of stealing user's personal data. Detecting and identifying a phishing website is a complex problem as it takes many factors into account. This project is an attempt to create a web app that identifies phishing websites using Machine learning.
+Phishing websites are fake websites created by malicious people with the intention of stealing user's personal data. Detecting and identifying a phishing website is a complex problem as it takes many factors into account. This project is an attempt to create a web app that identifies phishing websites using Machine learning.
 
 ## Dataset
 **Phishing websites:** 500 random websites were taken from http://phishtank.org/ <br />
