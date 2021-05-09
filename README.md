@@ -58,7 +58,7 @@ By creating a webpage, it allows to take an input from the user which would then
 Click here for demo of the app https://phishornah.herokuapp.com/ <br />
 
 ### Current limitations
-This is only a demonstration and is not fully functioning app. Inaccuracy can be identified  when a URL with long paths is tested.. In order to create a more accurate result, more features are needed to be introduced and with existing features; algorithms need to be refined. <br />
+This is only a demonstration and is not fully functioning app. Inaccuracy can be identified  when a URL with long paths is tested.. In order to create a more accurate result, more features are needed to be introduced and with existing features; algorithms need to be refined. <br /><br />
 Additional improvement would be implementing deep learning. Deep learning is a subset of machine learning that builds an “artificial neural network”. This allows the model to learn and make intelligent decisions on it’s own. In other words, deep learning continues to learn when the application is running whereas for a decision tree, once the model is built it stops learning. 
 
 
