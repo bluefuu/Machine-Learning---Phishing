@@ -1,4 +1,5 @@
-# Phishing Website Detection using Machine Learning
+![banner_small.png](banner_small.png)
+
 > 2021 Cyber Security Capstone Project
 > 
 > Kim Nguyen
