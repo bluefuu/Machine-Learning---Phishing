@@ -2,7 +2,7 @@
 
 > 2021 Cyber Security Capstone Project
 > 
-> Kim Nguyen
+> K. Nguyen
 ## Objective
 Phishing websites are fake websites created by malicious people with the intention of stealing user's personal data. Detecting and identifying a phishing website is a complex problem as it takes many factors into account. This project is an attempt to create a web app that identifies phishing websites using Machine learning.
 
